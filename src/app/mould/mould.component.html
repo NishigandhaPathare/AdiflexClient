@@ -1,0 +1,47 @@
+<body style="background-image:url(../assets/img/img8.jpg);background-size:100%;height:600px;">
+    <div class="col-sm-12" style="text-align: center;">
+    <label for="name"class="control-label" ><b> MOULD :</b></label>&nbsp;
+    <mat-form-field appearance="outline">
+        <input  matInput  placeholder="Production"   type="number"  required>
+    </mat-form-field>
+    &nbsp;<button mat-raised-button color="primary">ADD</button>         
+</div>
+<div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> Id </th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+      
+        
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef> Date </th>
+          <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+      
+        
+        <ng-container matColumnDef="quantity">
+          <th mat-header-cell *matHeaderCellDef> Quantity </th>
+          <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+        </ng-container>
+      
+        
+        <ng-container matColumnDef="amount">
+          <th mat-header-cell *matHeaderCellDef> Amount </th>
+          <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="total">
+            <th mat-header-cell *matHeaderCellDef> Total </th>
+            <td mat-cell *matCellDef="let element"> {{element.total}} </td>
+          </ng-container>
+        
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>
+</body>
+
+

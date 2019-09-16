@@ -1,0 +1,35 @@
+
+mat-sidenav {
+    width: 20%;
+    border:2px solid blue;
+    background-color:rgb(51, 51, 153);
+  }
+  mat-sidenav-container{
+      width: 100%;
+      height:665px;
+      
+  }
+  mat-list{
+      font-size:20px;
+      background-color:rgb(51, 51, 153);
+    
+    
+  }
+  .btn1{
+      margin-left:20%;
+     width:15%;
+     border-radius: 150px;
+     background-color:grey;
+     color:white;
+  }
+  .btn1:hover{
+      background-color: rgb(0, 0, 153);
+
+  }
+  .menu1{
+      border:1px solid white;
+      
+  }
+  .menu1:hover{
+      background-color:rgb(0, 0, 153);
+  }

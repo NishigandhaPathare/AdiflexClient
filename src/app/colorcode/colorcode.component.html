@@ -1,0 +1,20 @@
+<body style="background-image:url(../assets/img/img8.jpg);background-size:100%;height:600px;">
+       
+<div class="col-sm-12" style="text-align: center;">
+    <mat-form-field appearance="outline" >
+        <mat-label><b>COLOR CODE</b></mat-label>
+
+        <select matNativeControl required  [(value)]="selected">
+          <option value="primary">Primary</option>
+          <option value="oxide">Oxide</option>
+          <option value="poly">Poly</option>
+        </select>
+      </mat-form-field>
+&nbsp;
+       <mat-form-field  floatLable="auto" appearance="outline" color="warn" style="margin-top:5%">
+              
+               <input matInput type="number" placeholder="color-code" >
+           </mat-form-field> 
+      &nbsp;<button mat-raised-button color="primary" >ADD </button> 
+</div>
+</body>

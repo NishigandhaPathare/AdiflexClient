@@ -1,0 +1,43 @@
+
+    <mat-sidenav-container  > 
+            <mat-sidenav #sidenav opened mode="side">
+                <div style="height:30%;background-image:url(../assets/img/profile.png);background-size: 100%;background-repeat: no-repeat;">
+                    
+                </div>
+                
+                <div>
+                    <mat-list>
+                             <div class="menu1" >
+                        <mat-list-item style="color:white;" (click)="set(0)">PRODUCTION FROM</mat-list-item></div>
+                        <div class="menu1"> <mat-list-item   style="color:white;" (click)="set(1)" >CRUMB</mat-list-item></div>
+                        <div class="menu1"><mat-list-item  style="color:white;" (click)="set(2)">SOLUTION B</mat-list-item></div>
+                        <div class="menu1"> <mat-list-item  style="color:white;" (click)="set(3)">MOULD R</mat-list-item></div>
+                        <div class="menu1"> <mat-list-item  style="color:white;" (click)="OpenOnClick()">COLOUR MASTER<mat-icon>keyboard_arrow_down</mat-icon></mat-list-item>
+                        <mat-list-item *ngIf=show  (click)="set(4)" style="color: white;">ColorName</mat-list-item> 
+                        <mat-list-item *ngIf=show  (click)="set(5)" style="color: white;">ColorCode</mat-list-item> 
+                    </div>
+                        <div class="menu1"><mat-list-item style="color:white;" (click)="set(6)">PAYROLL </mat-list-item></div>  
+                    </mat-list>  
+                </div>
+                
+            </mat-sidenav>
+            <mat-sidenav-content>
+                    <mat-toolbar  style=" box-shadow: 0px 6px 15px grey; background-color:  rgb(51, 51, 153); color:white;">
+                         <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+                         <h1 style="margin-left:35%; font-size:30px; ">ADIFLEX TYLES</h1> 
+                         <button class="btn1" (click)="logout()">LOGOUT</button>
+                    </mat-toolbar>
+                    
+                    <div class="main-content"  >
+                        
+                    </div>  
+                     
+                    <div>
+                        <router-outlet></router-outlet>
+                    </div>
+                      
+                </mat-sidenav-content>
+        </mat-sidenav-container>
+    
+    
+    

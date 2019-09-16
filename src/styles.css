@@ -1,0 +1,35 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; 
+ .div1{
+    
+    background-image: url(src\assets\img\img2.jpg);
+    background-repeat: no-repeat;
+    width:50%;
+    height:660px;
+    background-size:100%;
+}
+.div2{
+    
+    background-image: url(src\assets\img\img4.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    width:50%;
+    height:660px; 
+}
+
+.heading{
+    font-size:70px;
+    color:rgb(255, 255, 77);
+    margin-top:250px;
+    text-align: center;
+}
+.lname{
+    color:blue;
+    margin-left:120px; 
+}
+.login{
+    margin-top:150px;
+    width:400px;
+    height:50%;
+    text-align: center; 
+    margin-left:90px;
+}
